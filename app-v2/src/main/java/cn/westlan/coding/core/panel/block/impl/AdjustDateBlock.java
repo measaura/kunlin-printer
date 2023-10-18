@@ -44,7 +44,8 @@ public class AdjustDateBlock implements Block {
 
     @Override
     public String demo() {
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern, Locale.CHINA);
+//        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern, Locale.CHINA);
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern, Locale.US);
         return simpleDateFormat.format(adjustDate.getCalendar().getTime());
     }
 
@@ -69,8 +70,16 @@ public class AdjustDateBlock implements Block {
                     slices.add(new NumberSlice(NumberType.LowYear, adjustDate));
                 }
             }else if(charArray[searchIndex]=='M'&&charArray[searchIndex+1] =='M'){
-                findLength = 2;
-                slices.add(new NumberSlice(NumberType.Month, adjustDate));
+                if(remainLength>=3 && charArray[searchIndex+2]=='M'){
+                    findLength = 3;
+                    slices.add(new NumberSlice(NumberType.Month_enGB, adjustDate));
+//                    slices.add(new NumberSlice(NumberType.Month_idID, adjustDate));
+                }else {
+                    findLength = 2;
+                    slices.add(new NumberSlice(NumberType.Month, adjustDate));
+                }
+//                findLength = 2;
+//                slices.add(new NumberSlice(NumberType.Month, adjustDate));
             }else if(charArray[searchIndex]=='d'&&charArray[searchIndex+1] =='d'){
                 findLength = 2;
                 slices.add(new NumberSlice(NumberType.Day, adjustDate));

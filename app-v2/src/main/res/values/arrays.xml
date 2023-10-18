@@ -11,21 +11,36 @@
     </string-array>
     <string-array name="datePattern">
         <item>YYYYMMDD</item>
+        <item>YYYYMMMDD</item>
         <item>DDMMYYYY</item>
+        <item>DDMMMYYYY</item>
         <item>YYMMDD</item>
+        <item>YYMMMDD</item>
         <item>DDMMYY</item>
+        <item>DDMMMYY</item>
         <item>YYYY/MM/DD</item>
+        <item>YYYY/MMM/DD</item>
         <item>DD/MM/YYYY</item>
+        <item>DD/MMM/YYYY</item>
         <item>YY/MM/DD</item>
+        <item>YY/MMM/DD</item>
         <item>DD/MM/YY</item>
+        <item>DD/MMM/YY</item>
         <item>YYYY.MM.DD</item>
+        <item>YYYY.MMM.DD</item>
         <item>DD.MM.YYYY</item>
+        <item>DD.MMM.YYYY</item>
         <item>YY.MM.DD</item>
+        <item>YY.MMM.DD</item>
         <item>DD.MM.YY</item>
+        <item>DD.MMM.YY</item>
         <item>YYYY年MM月DD日</item>
         <item>YY年MM月DD日</item>
         <item>YY</item>
         <item>YYYY</item>
+        <item>MM</item>
+        <item>MMM</item>
+        <item>DD</item>
     </string-array>
 
 </resources>
