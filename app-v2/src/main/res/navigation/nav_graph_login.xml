@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph_login"
+            app:startDestination="@id/LoginFragment">
+    <fragment
+            android:id="@+id/LoginFragment"
+            android:name="cn.westlan.coding.login.ui.main.LoginFragment"
+            android:label="登录"
+            tools:layout="@layout/fragment_password">
+        <action
+                android:id="@+id/action_LoginFragment_to_RegisterFragment"
+                app:destination="@id/RegisterFragment"/>
+        <action
+                android:id="@+id/action_LoginFragment_to_ForgetPwdFragment"
+                app:destination="@id/ForgetPwdFragment"/>
+    </fragment>
+    <fragment
+            android:id="@+id/RegisterFragment"
+            android:name="cn.westlan.coding.login.ui.main.RegisterFragment"
+            android:label="注册"
+            tools:layout="@layout/fragment_password_modify">
+    </fragment>
+    <fragment
+            android:id="@+id/ForgetPwdFragment"
+            android:name="cn.westlan.coding.login.ui.main.ForgetPwdFragment"
+            android:label="忘记密码"
+            tools:layout="@layout/fragment_main">
+    </fragment>
+</navigation>

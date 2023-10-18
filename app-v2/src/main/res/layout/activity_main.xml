@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="150dp"
+                android:layout_marginBottom="10dp">
+            <Button
+                    android:id="@+id/qrcode"
+                    android:text="@string/qrcode_text"
+                    android:layout_width="242dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp">
+            <Button
+                    android:id="@+id/scan"
+                    android:layout_width="242dp"
+                    android:layout_height="60dp"
+                    android:text="@string/start_scan"
+                    android:layout_gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_marginBottom="150dp"
+                android:layout_marginTop="10dp">
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/scan_results"
+                    android:layout_width="230dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:scrollbars="vertical"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+            android:layout_gravity="bottom"
+            android:gravity="center"
+            android:orientation="horizontal" android:id="@+id/llAppVersion"
+            android:paddingTop="3dp" android:paddingBottom="14dp" android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="@color/home_drawer_app_version_text_color"
+                  android:ellipsize="end"
+                  android:gravity="center"
+                  android:id="@+id/tvAppVersion" android:layout_width="wrap_content"
+                  android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:src="@drawable/language"/>
+
+
+    <!--    <FrameLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom|right"-->
+    <!--            android:layout_marginEnd="16dp"-->
+    <!--            android:layout_marginBottom="16dp">-->
+    <!--        <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+    <!--                android:id="@+id/language"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:src="@android:color/transparent"/>-->
+    <!--        <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:text="@string/language"-->
+    <!--                android:elevation="16dp"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <!--    </FrameLayout>-->
+    <!--    <FrameLayout-->
+    <!--            android:id="@+id/language"-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_gravity="bottom|right">-->
+    <!--        <TextView-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_gravity="center"-->
+    <!--                android:text="@string/language"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:textColor="@android:color/white"-->
+    <!--                android:textAppearance="?android:attr/textAppearanceMedium" />-->
+    <!--    </FrameLayout>-->
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

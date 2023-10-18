@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="40dp"
+        android:paddingHorizontal="40dp"
+        android:orientation="vertical"
+        tools:context=".control.fragment.UpdateFragment">
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/updateTips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/dfu_status_no_update"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/checkProgressBar"/>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/versionDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="60dp"
+            android:minWidth="160dp"
+            android:gravity="start"
+            android:textColor="@color/white"
+            android:text="" tools:ignore="RtlHardcoded"/>
+    <Button
+            android:text="@string/dfu_action_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginHorizontal="80dp"
+            android:id="@+id/updateAction" />
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/updateStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="@string/dfu_status_uploading"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/updateProgressBar"/>
+    <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/updateProgressText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="0%"/>
+</LinearLayout>

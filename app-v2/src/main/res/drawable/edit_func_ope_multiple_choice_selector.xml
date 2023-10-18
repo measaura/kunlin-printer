@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true" android:drawable="@drawable/edit_func_ope_multiple_choice_check_ic" />
+    <item android:drawable="@drawable/edit_func_ope_multiple_choice_un_check_ic" />
+</selector>

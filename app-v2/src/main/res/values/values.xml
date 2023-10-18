@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditorPanel">
+        <!--最大宽度-->
+        <attr format="dimension" name="android_maxWidth"/>
+        <!--最大高度-->
+        <attr format="dimension" name="android_maxHeight"/>
+        <!--分割线大小-->
+        <attr format="float" name="maxWidthRatio"/>
+        <!--分割线大小-->
+        <attr format="float" name="maxHeightRatio"/>
+    </declare-styleable>
+</resources>

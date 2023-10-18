@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".control.fragment.ContentFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4">
+        <TextView android:textSize="12sp"
+                  android:textColor="@color/edit_choice_mode_text_color"
+                  android:id="@+id/tvChoiceMode"
+                  android:background="@drawable/edit_choice_mode_bg_shape"
+                  android:paddingTop="5dp"
+                  android:paddingBottom="5dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:text="@string/edit_ope_choice_mode_single"
+                  android:paddingStart="10dp"
+                  android:paddingEnd="10dp"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintTop_toTopOf="parent"/>
+        <cn.westlan.coding.core.panel.EditorPanel
+                android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                android:id="@+id/editorPanel"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvChoiceMode"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5">
+        <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabIndicator"
+                android:background="@color/edit_indicator_bg_color"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                app:tabIndicatorColor="@color/edit_indicator_under_line_color" app:tabIndicatorFullWidth="false"
+                app:tabIndicatorHeight="2dp" app:tabSelectedTextColor="@color/edit_indicator_select_text_color"
+                app:tabTextAppearance="@style/TabLayoutTextSizeStyle"
+                app:tabTextColor="@color/edit_indicator_un_select_text_color">
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/vpFunc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

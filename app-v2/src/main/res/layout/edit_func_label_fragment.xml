@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:tag="layout/edit_func_label_fragment_0" android:background="@color/edit_func_area_bg_color"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llNew" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_label_create_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/edit_label_create"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llTemplateSave" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_label_model_save_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/edit_label_save_as_template"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llTemplate" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_label_model_open_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/edit_label_template"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_shape_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_shape"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_bar_code_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="未知"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_bar_code_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="未知"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

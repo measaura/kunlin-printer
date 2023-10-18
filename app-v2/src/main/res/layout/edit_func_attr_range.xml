@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:gravity="top|bottom|center_vertical|fill_vertical|center|fill"
+                                                   android:orientation="horizontal"
+                                                   android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:id="@+id/tvRangeLabel" android:textSize="14sp" android:textColor="@color/edit_func_attr_label_text_color" android:paddingTop="15dp"
+              android:paddingBottom="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              android:text="" android:paddingStart="15dp" app:layout_constraintBottom_toBottomOf="parent"
+              app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+    <com.xw.repo.BubbleSeekBar android:id="@+id/sbRangeValue" android:layout_width="240dp"
+                               android:layout_height="wrap_content" android:layout_marginHorizontal="15dp" app:bsb_hide_bubble="true"
+                               app:bsb_second_track_color="@color/edit_attr_line_trace_select_color"
+                               app:bsb_section_text_size="2dp"
+                               app:bsb_track_color="@color/edit_attr_line_trace_un_select_color"
+                               app:bsb_track_size="2dp" app:layout_constraintBottom_toBottomOf="parent"
+                               app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:tag="layout/register_activity_0" android:focusable="true" android:focusableInTouchMode="true"
+              android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:background="@color/user_interface_bg_color" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="11dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_1" android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_account_hint"
+                          android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|number|numberSigned|numberDecimal|numberPassword|phone"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="1dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_2" android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_verification_code_hint"
+                          android:layout_weight="1.0"
+                          android:inputType="number|numberSigned|numberDecimal|numberPassword|phone"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+                <TextView android:id="@+id/tvGetVCode" android:tag="binding_3"
+                          android:text="@string/forget_pwd_send_verification_code" style="@style/UserVCodeTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="1dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_4" android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_password_hint"
+                          android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="1dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_5" android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_name_hint"
+                          android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="10dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_6"  android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_emil_hint"
+                          android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone|time"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="1dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <EditText android:tag="binding_7"  android:paddingTop="17dp"
+                          android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content"
+                          android:hint="@string/register_input_company_name_hint"
+                          android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_marginTop="10dp"
+                          style="@style/RegisterInputItemStyle">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"
+                          style="@style/RegisterRequiredTipStyle"/>
+                <TextView android:id="@+id/tvUserType" android:tag="binding_8"
+                          android:paddingTop="17dp" android:paddingBottom="17dp" android:layout_width="match_parent"
+                          android:layout_height="wrap_content" android:hint="@string/register_input_user_type_hint"
+                          android:paddingStart="2dp" android:paddingEnd="0px" style="@style/UserInputAreaTextStyle"/>
+            </LinearLayout>
+            <TextView android:id="@+id/tvRegister" android:tag="binding_9" android:layout_marginTop="42dp"
+                      android:text="@string/register_register_now" style="@style/UserButtonTextStyle"/>
+            <TextView android:textSize="11sp" android:textColor="@color/register_policy_common_color"
+                      android:layout_gravity="left|right|center_horizontal|fill_horizontal|center|fill|start|end"
+                      android:id="@+id/tvPolicy" android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp" android:layout_marginBottom="14dp"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

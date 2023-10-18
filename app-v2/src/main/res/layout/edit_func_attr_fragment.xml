@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/edit_func_ope_fragment_0"
+            android:background="@color/edit_func_area_bg_color" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:overScrollMode="never">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:id="@+id/llGroup"
+                  android:layout_height="wrap_content">
+    </LinearLayout>
+</ScrollView>

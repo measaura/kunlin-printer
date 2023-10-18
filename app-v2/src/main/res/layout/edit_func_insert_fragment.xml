@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical"
+              android:background="@color/edit_func_area_bg_color"
+              android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:layout_weight="1.0">
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llText" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_text_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_text"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llBarcode" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_bar_code_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_bar_code"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llQrCode" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_qr_code_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_qr_code"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llDate" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_date_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_date"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                  android:layout_height="match_parent" android:baselineAligned="false" android:layout_weight="1.0">
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llLine" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_line_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_line"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llShape" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_shape_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_shape"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llSerial" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_serial_number_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_serial_number"/>
+        </LinearLayout>
+        <LinearLayout
+                android:gravity="center_vertical|center_horizontal"
+                android:orientation="vertical" android:id="@+id/llTime" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:layout_weight="1.0">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_insert_time_ic"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"
+                      android:gravity="center_horizontal"
+                      android:layout_width="wrap_content" android:layout_height="wrap_content"
+                      android:layout_marginTop="5dp" android:text="@string/attr_insert_time"/>
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--                android:gravity="center_vertical|center_horizontal"-->
+<!--                android:orientation="vertical" android:visibility="invisible" android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent" android:layout_weight="1.0">-->
+<!--            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                       android:src="@drawable/edit_func_insert_bar_code_ic"/>-->
+<!--            <TextView android:textSize="12sp" android:textColor="@color/edit_func_insert_text_color"-->
+<!--                      android:gravity="center_horizontal"-->
+<!--                      android:layout_width="wrap_content" android:layout_height="wrap_content"-->
+<!--                      android:layout_marginTop="5dp" android:text="未知"/>-->
+<!--        </LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

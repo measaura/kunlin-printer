@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_gravity="bottom" android:orientation="vertical"
+              android:background="@drawable/base_shape_dialog"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+    <androidx.recyclerview.widget.RecyclerView android:id="@+id/rvOperates" android:paddingTop="1dp" android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:overScrollMode="never"/>
+    <TextView android:textSize="15sp" android:textColor="@color/base_selector_k_alter_view_cancel_text_color"
+              android:gravity="center"
+              android:id="@+id/tvCancel" android:background="@drawable/base_selector_k_alter_cancel_view_operation_pressed"
+              android:padding="14dp" android:focusable="true" android:clickable="true" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/cancel"/>
+</LinearLayout>

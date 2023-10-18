@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical"
+              android:tag="layout/login_activity_0" android:fitsSystemWindows="true" android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <ScrollView android:background="@color/user_interface_bg_color" android:layout_width="match_parent"
+                android:layout_height="match_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true"
+                      android:layout_width="match_parent" android:layout_height="wrap_content">>
+            <EditText android:id="@+id/etAccount" android:tag="binding_1"
+                      android:background="@drawable/user_input_area_round_shape"
+                      android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="42dp" android:hint="@string/login_input_account_hint"
+                      android:inputType="phone"
+                      android:layout_marginStart="23dp" android:layout_marginEnd="23dp"
+                      style="@style/UserInputAreaTextStyle"/>
+            <EditText android:id="@+id/etPwd" android:tag="binding_2"
+                      android:background="@drawable/user_input_area_round_shape"
+                      android:padding="12dp" android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="24dp" android:hint="@string/login_input_password_hint"
+                      android:inputType="textPassword"
+                      android:layout_marginStart="23dp" android:layout_marginEnd="23dp"
+                      style="@style/UserInputAreaTextStyle"/>
+            <TextView android:id="@+id/tvLogin" android:tag="binding_3" android:layout_marginTop="52dp"
+                      android:text="@string/login_login_now" style="@style/UserButtonTextStyle"/>
+            <androidx.constraintlayout.widget.ConstraintLayout android:paddingBottom="10dp"
+                                                               android:layout_width="match_parent"
+                                                               android:layout_height="wrap_content"
+                                                               android:layout_marginTop="11dp">
+                <TextView android:textSize="13sp" android:textColor="@color/login_forget_pwd_text_color"
+                          android:id="@+id/tvForgetPwd" android:paddingBottom="10dp" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:text="@string/login_forget_password"
+                          android:paddingStart="23dp" android:paddingEnd="10dp"
+                          app:layout_constraintStart_toStartOf="parent"
+                          app:layout_constraintTop_toTopOf="parent"/>
+                <TextView android:textSize="13sp" android:textColor="@color/login_register_new_text_color"
+                          android:id="@+id/tvRegister" android:paddingBottom="10dp" android:layout_width="wrap_content"
+                          android:layout_height="wrap_content" android:layout_marginBottom="10dp"
+                          android:text="@string/login_register_new_account" android:paddingStart="10dp"
+                          android:paddingEnd="23dp"
+                          app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

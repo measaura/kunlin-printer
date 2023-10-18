@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:tag="layout/edit_func_ope_fragment_0"
+            android:background="@color/edit_func_area_bg_color" android:layout_width="match_parent"
+            android:layout_height="match_parent" android:overScrollMode="never">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView android:textSize="11sp" android:textColor="@color/edit_func_ope_text_color"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="13dp" android:text="@string/basic_operation" android:layout_marginStart="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_func_ope_sub_area_shape"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="7dp" android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <ImageView android:id="@+id/ivCopy" android:paddingTop="12dp" android:paddingBottom="12dp"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_ope_copy_selector" android:layout_weight="1.0"/>
+            <ImageView android:id="@+id/ivChoice" android:paddingTop="12dp" android:paddingBottom="12dp"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_ope_multiple_choice_selector" android:layout_weight="1.0"/>
+            <ImageView android:id="@+id/ivLock" android:paddingTop="12dp" android:paddingBottom="12dp"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_ope_lock_selector" android:layout_weight="1.0"/>
+            <ImageView android:id="@+id/ivDelete" android:paddingTop="12dp" android:paddingBottom="12dp"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_ope_delete_selector" android:layout_weight="1.0"/>
+            <ImageView android:id="@+id/ivRotate" android:paddingTop="12dp" android:paddingBottom="12dp"
+                       android:layout_width="match_parent" android:layout_height="wrap_content"
+                       android:src="@drawable/edit_func_ope_rotate_selector" android:layout_weight="1.0"/>
+        </LinearLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/edit_func_ope_text_color"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="13dp" android:text="@string/alignment" android:layout_marginStart="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:layout_marginTop="7dp">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_func_ope_sub_area_shape"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="1.0" android:layout_marginStart="15dp"
+                          android:layout_marginEnd="4.5dp">
+                <ImageView android:id="@+id/ivHorizontalLeftAlign" android:paddingTop="12dp"
+                           android:paddingBottom="12dp" android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_horizontal_left_align_selector"
+                           android:layout_weight="1.0"/>
+                <ImageView android:id="@+id/ivHorizontalCenterAlign" android:paddingTop="12dp"
+                           android:paddingBottom="12dp" android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_horizontal_center_align_selector"
+                           android:layout_weight="1.0"/>
+                <ImageView android:id="@+id/ivHorizontalRightAlign" android:paddingTop="12dp"
+                           android:paddingBottom="12dp" android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_horizontal_right_align_selector"
+                           android:layout_weight="1.0"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_func_ope_sub_area_shape"
+                          android:layout_width="match_parent" android:layout_height="wrap_content"
+                          android:layout_weight="1.0" android:layout_marginStart="4.5dp"
+                          android:layout_marginEnd="15dp">
+                <ImageView android:id="@+id/ivVerticalTopAlign" android:paddingTop="12dp" android:paddingBottom="12dp"
+                           android:layout_width="match_parent" android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_vertical_top_align_selector"
+                           android:layout_weight="1.0"/>
+                <ImageView android:id="@+id/ivVerticalCenterAlign" android:paddingTop="12dp"
+                           android:paddingBottom="12dp" android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_vertical_center_align_selector"
+                           android:layout_weight="1.0"/>
+                <ImageView android:id="@+id/ivVerticalBottomAlign" android:paddingTop="12dp"
+                           android:paddingBottom="12dp" android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:src="@drawable/edit_func_ope_vertical_bottom_align_selector"
+                           android:layout_weight="1.0"/>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/edit_func_ope_text_color"
+                  android:layout_width="wrap_content" android:layout_height="wrap_content"
+                  android:layout_marginTop="22dp" android:text="@string/distribution" android:layout_marginStart="15dp"/>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/edit_func_ope_sub_area_shape"
+                      android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:layout_marginTop="9dp" android:layout_marginBottom="15dp"
+                      android:layout_marginStart="15dp" android:layout_marginEnd="15dp">
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_ope_text_color"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:id="@+id/tvVerticalTopDistribution" android:paddingTop="15dp" android:paddingBottom="15dp"
+                      android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vertical_top_distribution"
+                      android:layout_weight="1.0"/>
+            <View android:layout_gravity="center_vertical"
+                  android:background="@color/edit_func_ope_divider_color" android:layout_width="1dp"
+                  android:layout_height="12dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_ope_text_color"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:id="@+id/tvHorizontalLeftDistribution" android:paddingTop="15dp"
+                      android:paddingBottom="15dp" android:layout_width="match_parent"
+                      android:layout_height="wrap_content" android:text="@string/horizontal_left_distribution" android:layout_weight="1.0"/>
+            <View android:layout_gravity="center_vertical"
+                  android:background="@color/edit_func_ope_divider_color" android:layout_width="1dp"
+                  android:layout_height="12dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_ope_text_color"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:id="@+id/tvVerticalCenter" android:paddingTop="15dp" android:paddingBottom="15dp"
+                      android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/vertical_center_distribution"
+                      android:layout_weight="1.0"/>
+            <View android:layout_gravity="center_vertical"
+                  android:background="@color/edit_func_ope_divider_color" android:layout_width="1dp"
+                  android:layout_height="12dp"/>
+            <TextView android:textSize="12sp" android:textColor="@color/edit_func_ope_text_color"
+                      android:gravity="center_vertical|center_horizontal"
+                      android:id="@+id/tvEquidistantDistribution" android:paddingTop="15dp" android:paddingBottom="15dp"
+                      android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/equidistant_distribution"
+                      android:layout_weight="1.0"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

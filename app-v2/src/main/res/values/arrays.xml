@@ -1,0 +1,31 @@
+<resources>
+    <string-array name="fontsize">
+        <item>2.5mm</item>
+        <item>3mm</item>
+        <item>3.5mm</item>
+        <item>4mm</item>
+    </string-array>
+    <string-array name="language">
+        <item>中文</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="datePattern">
+        <item>YYYYMMDD</item>
+        <item>DDMMYYYY</item>
+        <item>YYMMDD</item>
+        <item>DDMMYY</item>
+        <item>YYYY/MM/DD</item>
+        <item>DD/MM/YYYY</item>
+        <item>YY/MM/DD</item>
+        <item>DD/MM/YY</item>
+        <item>YYYY.MM.DD</item>
+        <item>DD.MM.YYYY</item>
+        <item>YY.MM.DD</item>
+        <item>DD.MM.YY</item>
+        <item>YYYY年MM月DD日</item>
+        <item>YY年MM月DD日</item>
+        <item>YY</item>
+        <item>YYYY</item>
+    </string-array>
+
+</resources>
